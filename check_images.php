@@ -5,7 +5,7 @@ echo "<h2>Image Path Diagnostic</h2>";
 
 $result = $conn->query("SELECT item_id, item_name, image_path FROM tblClothes");
 echo "<table border='1' cellpadding='8'>";
-echo "<tr><th>ID</th><th>Product</th><th>DB Path</th><th>File Exists?</th><th>Full Path</th></tr>";
+echo "<table><th>ID</th><th>Product</th><th>DB Path</th><th>File Exists?</th><th>Full Path</th></tr>";
 
 while ($row = $result->fetch_assoc()) {
     $fullPath = __DIR__ . '/' . $row['image_path'];

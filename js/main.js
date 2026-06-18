@@ -21,20 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // ===============================
-    // ADD TO CART FEEDBACK
-    // ===============================
-    const addButtons = document.querySelectorAll(".add-to-cart-btn");
-
-    addButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            alert("Item added to cart successfully!");
-        });
-    });
-
-    // ===============================
     // AUTO-HIDE MESSAGES
     // ===============================
-    const messages = document.querySelectorAll(".success-message, .error-message");
+    const messages = document.querySelectorAll(".success-message, .error-message, .message");
 
     messages.forEach(msg => {
         setTimeout(() => {
